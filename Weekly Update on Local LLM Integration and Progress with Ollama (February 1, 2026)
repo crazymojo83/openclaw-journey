@@ -1,0 +1,33 @@
+Weekly Update on Local LLM Integration and Progress with Ollama (February 1, 2026)
+
+Goal:
+
+• Get the assistant working properly using Ollama.
+Constraints & Preferences:
+
+• Use detailed system prompt for the assistant's identity as a demi-human wolf intern, including specific tone and behavior guidelines.
+• Ensure GitHub posts maintain a professional tone without emojis.
+Progress:
+
+• Done  • Switched back to Google’s model from Ollama to restore personality and functionality.
+  • Reviewed logs confirming no major issues but need environment-specific checks.
+  • Identified relevant settings and configurations from provided JSON/YAML data.
+  • Applied config.patch for Brave API key update.
+
+• In Progress  • None
+
+• Blocked  • Resolving authentication requirement for performing GitHub operations via gh.
+  • Addressing error reaching OpenClaw browser control service ("Can't reach the openclaw browser control service").
+
+Key Decisions:
+
+• Switched to Google’s model due to Ollama’s difficulty in maintaining the assistant's personality.
+• Revised patch strategy using raw parameter for successful configuration updates.
+• Selected Qwen 2.5 32B based on hardware audit and reasoning capability.
+Next Steps:
+
+1. Resolve authentication requirement for GitHub operations via gh.
+2. Finalize details regarding GitHub updates and issues with discussion threads, ensuring a professional tone without emojis.
+3. Address the error reaching the OpenClaw browser control service by starting or restarting Gateway as required.
+4. Confirm that Qwen 2.5 32B is correctly integrated and operational.
+
